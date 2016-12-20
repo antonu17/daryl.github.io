@@ -57,6 +57,9 @@ p {
 
 img {
   vertical-align: bottom;
+  display: inline-block;
+  height: auto;
+  width: 100%;
 }
 
 h1 {
@@ -200,10 +203,7 @@ main {
 }
 
 .full img {
-  display: inline-block;
   max-width: 960px;
-  height: auto;
-  width: 100%;
 }
 
 .alone {
@@ -220,15 +220,37 @@ main {
 }
 
 .osx {
-  background: url(/img/wallpaper.jpg) no-repeat;
-  background-position: bottom;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
-.osx img {
+.osx.sierra {
+  background-image: url(/img/sierra.jpg);
+  background-position: bottom;
+}
+
+.osx.caves {
+  background-image: url(/img/caves.jpg);
+}
+
+.osx .sketch {
   max-width: 960px;
   margin: 60px 0 0;
   width: 92%;
+}
+
+.twitter .osx {
+  justify-content: center;
+  padding: 60px 20px 20px;
+  display: flex;
+}
+
+.twitter .app {
+  max-width: 530px;
+}
+
+.twitter .app img {
+  max-width: 100%;
 }
 
 .therm .full {
@@ -294,7 +316,11 @@ footer a[href]:hover {
     width: 100%;
   }
 
-  .osx img {
+  .twitter .osx {
+    padding: 40px 0 10px;
+  }
+
+  .osx .sketch {
     margin: 40px 0 0;
   }
 }
