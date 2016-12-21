@@ -229,8 +229,9 @@ main {
   background-position: bottom;
 }
 
-.osx.caves {
-  background-image: url(/img/caves.jpg);
+.osx.woods {
+  background-image: url(/img/woods.jpg);
+  background-position: center;
 }
 
 .osx img {
