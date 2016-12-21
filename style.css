@@ -233,24 +233,18 @@ main {
   background-image: url(/img/caves.jpg);
 }
 
+.osx img {
+  margin: 60px 0 0;
+}
+
 .osx .sketch {
   max-width: 960px;
-  margin: 60px 0 0;
   width: 92%;
 }
 
-.twitter .osx {
-  justify-content: center;
-  padding: 60px 20px 20px;
-  display: flex;
-}
-
-.twitter .app {
-  max-width: 530px;
-}
-
-.twitter .app img {
-  max-width: 100%;
+.osx .twitter {
+  max-width: 1060px;
+  width: 90%;
 }
 
 .therm .full {
@@ -316,19 +310,8 @@ footer a[href]:hover {
     width: 100%;
   }
 
-  .twitter .osx {
-    padding: 40px 0 10px;
-  }
-
-  .twitter .app:first-child {
-    margin: 0 -5px 0 0;
-  }
-
-  .twitter .app:last-child {
-    margin: 0 0 0 -5px;
-  }
-
-  .osx .sketch {
+  .osx .sketch,
+  .osx .twitter {
     margin: 40px 0 0;
   }
 }
