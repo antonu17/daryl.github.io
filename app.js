@@ -501,17 +501,3 @@ therm.onended = () => {
   }, 2000);
 };
 
-/**
- * Play therm on load
- */
-
-therm.oncanplaythrough = () => {
-  therm.play();
-};
-
-/**
- * Preload
- */
-
-therm.load();
-
