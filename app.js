@@ -460,14 +460,6 @@ shapesXY.some(([y,x]) => {
 });
 
 /**
- * Loop delay
- */
-
-therm.addEventListener('ended', () => {
-  setTimeout(() => therm.play(), 3000);
-}, false);
-
-/**
  * Move shapes
  *
  * @api public
@@ -498,3 +490,28 @@ onscroll = () => {
   sy = scrollY;
   tick();
 };
+
+/**
+ * Loop therm
+ */
+
+therm.onended = () => {
+  setTimeout(() => {
+    therm.play();
+  }, 2000);
+};
+
+/**
+ * Play therm on load
+ */
+
+therm.oncanplaythrough = () => {
+  therm.play();
+};
+
+/**
+ * Preload
+ */
+
+therm.load();
+
