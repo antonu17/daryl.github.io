@@ -1,1 +1,1 @@
-### [&#x1F30D;](http://daryl.im)
+### [&#x1F30D;](http://daryl.github.io)
